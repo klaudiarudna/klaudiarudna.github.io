@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Klaudia Rudna</title>
+    <link rel="stylesheet" href="klaudia-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="container">
+            <a href="index.html" class="logo"><img src="img\klaudia-logo.svg" alt="Klaudia Rudna Logo"></a>
+         <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html" class='active-page'>About</a></li>
+                <li><a href="contact.html" class="btn-secondary">Contact</a></li>
+            </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Product Designer with an Analytical Mind</h1>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="columns">
+                <!-- First column: Text and CTA -->
+                <div class="column">
+                    <p>Hi, I’m Klaudia—a research-driven UX designer with a passion for solving complex problems and designing intuitive experiences that drive results.</p>
+                    <p>With over 8 years of UX experience, I’ve worked with brands like UNiDAYS, YouCanBook.me, and eBay Motors Group, designing for millions of users across mobile and web platforms. My expertise lies in UX research, conversion rate optimization, and creating user-friendly digital products that keep people engaged.</p>
+                    <p>Before specializing in UX, I spent nearly a decade as a freelance web and graphic designer, working on branding, marketing materials, and website development. This hands-on experience helps me approach UX with a holistic perspective—balancing user needs with business goals.</p>
+                    <p>I thrive on understanding how people think, behave, and interact with digital products—using research and testing to guide every decision. Whether it’s improving onboarding, optimizing conversion flows, or refining information architecture, I focus on making experiences that are not just functional but enjoyable.</p>
+                    <p>When I’m not designing, you’ll find me spending time with my family, exploring design trends, or geeking out over the latest productivity tools.</p>
+                    <a href="contact.html" class="btn glow-on-hover">Let's talk</a>
+                </div>
+
+                <!-- Second column: Image -->
+                <div class="column my-photo"></div>
+              </div>
+            </div>
+    </section>
+
+        <footer>
+        <div class="container">
+            <div class="contact-info">
+                <h2>Let's Talk</h2>
+                <p><img class="icon-before-text" src="img\icon-email.svg" alt="Email Icon"> contact@klaudia.pro</p>
+                <p><img class="icon-before-text" src="img\icon-location.svg" alt="Location Icon"> Cheshire, UK</p>
+                <p><a href="https://www.linkedin.com/in/klaudia-rudna-6465a1a2" target="_blank"><img class="LinkedIn" src="img\icon-linkedin.svg" alt="LinkedIn Icon"></a></p>
+            </div>
+            <p class="small-text">&copy; 2024 Klaudia Rudna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script> 
+        function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
