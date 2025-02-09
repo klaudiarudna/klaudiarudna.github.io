@@ -427,6 +427,7 @@ footer {
 #all_work .project-11{
     background-size: contain;
     background-position: top;
+    background-repeat: no-repeat;
 }
 
 /*About me page*/
