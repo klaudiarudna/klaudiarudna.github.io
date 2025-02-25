@@ -1,0 +1,233 @@
+/*WORK PAGE*/
+.projects {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: start;
+}
+
+.link-project {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    aspect-ratio: 3 / 2;
+}
+
+.project-image img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: auto;
+    padding: 4px 8px;
+    background-color: var(--primary-color);
+    margin: 0;
+    border-radius: 4px;
+}
+
+#featured .label{
+    padding: 0;
+    background-color: transparent;
+}
+#featured .label img{
+    height: 50px;
+    border-radius: 4px;
+}
+#featured .label .square{
+    height: 80px;
+}
+
+#featured .projects{
+    margin-bottom: 40px;
+}
+
+.project-text {
+    padding-top: 20px;
+    display: block;
+}
+
+.subheading {
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/* Hover Effect */
+.link-project:hover .project-image img {
+    transform: scale(1.1);
+}
+
+/*FANCYBOX*/
+.fancybox__carousel.is-draggable .fancybox__slide {
+    padding: 10px 50px 0;
+    max-width: 1200px;
+}
+
+.fancybox__carousel .fancybox__slide.has-iframe .fancybox__content{
+    height: 90% !important;
+}
+
+.fancybox__track{
+    justify-content: center;
+}
+
+/*TEMPLATE PAGE*/
+#project-template .container{
+    max-width:720px;
+}
+
+#project-template header{
+    margin-top: 0;
+}
+
+#project-template h1{
+    margin-bottom: 20px;
+}
+
+#project-template h2{
+    margin: 20px 0;
+}
+
+#project-template h3{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+#project-template img{
+    max-width: 100%;
+}
+
+.overview{
+    background-color: var(--background-light-blue);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#project-template .block{
+    margin: 60px 0;
+}
+
+.img-desctiption{
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/*project pages*/
+.motors-web-design .block img{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 80px;
+}
+
+.unidays-homepage .gif-mockup{
+    border-radius: 45px;
+    border: 12px solid black;
+    display: flex;
+    max-width: 300px !important;
+}
+
+.unidays-homepage .gif{
+    display: flex;
+    flex-direction: column;
+}
+
+/*PLACEHOLDER PAGE*/
+
+#placeholder .container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#placeholder h1{
+    margin: 0;
+}
+
+.placeholder-image{
+    display: flex;
+}
+
+.placeholder-image img{
+    width: 100%;
+    object-fit: cover;
+    height: fit-content;
+}
+
+.placeholder-message{
+    display: flex;
+    flex-direction: column;
+}
+.placeholder-message a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.placeholder-message a:hover{
+    text-decoration: underline;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 1024px) {
+    
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fancybox__carousel.is-draggable .fancybox__slide {
+        padding: 10px 10px 0;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    #featured .projects{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    
+    .fancybox__carousel.is-draggable .fancybox__slide {
+        padding: 10px 0 0;
+    }
+
+    .fancybox__carousel .fancybox__slide.has-iframe .fancybox__content {
+        padding: 0;
+    }
+
+    #placeholder .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .placeholder-image img {
+        width: 100px;
+    }
+}
+
+    
