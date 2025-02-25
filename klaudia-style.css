@@ -5,6 +5,7 @@
     --background-light-blue: rgba(0, 127, 127, 0.08);
     --text-color: black;
     --button-bg: black;
+    --text-light: #707070;
 }
 
 /* General Styles */
@@ -56,7 +57,7 @@ p {
 }
 
 .subheading{
-    color: #707070;
+    color: var(--text-light);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 600;
@@ -217,85 +218,11 @@ header{
     margin: 60px 0 0;
 }
 
-header h3{
+.name{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 0;
     color: var(--secondary-color);
-}
-
-/* Featured Projects */
-
-.projects {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.project {
-    position: relative;
-    width: calc(33.33% - 20px);
-    /* aspect-ratio: 3 / 2; */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.project-image {
-    width: 100%;
-    aspect-ratio: 3 / 2;
-    /*background-size: contain;
-    background-position: top;*/
-    flex-shrink: 0; /* Prevent shrinking */
-}
-
-.project-image img {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: auto;
-    height: 50px;
-}
-
-.label {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: auto;
-    padding: 4px 8px;
-    background-color: var(--primary-color);
-    margin: 0;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.project-text {
-    background: white;
-    width: 100%;
-    padding-top: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.project-1 { background-image: url('img/homepage.png'); }
-.project-2 { background-image: url('img/webdesign.png'); }
-.project-3 { background-image: url('img/growth.png'); }
-
-.project-1, 
-.project-2,
-.project-3{
-    background-size: contain;
-    background-position: top;
-}
-
-.project-2 img{
-    height: 70px;
 }
 
 /* What do I do section */
@@ -358,7 +285,7 @@ header h3{
 
 /* Footer */
 footer {
-    padding: 40px 0 20px;
+    padding: 40px 0 1px;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
 }
@@ -376,58 +303,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Work Page */
-#all_work .projects {
-    display: grid;
-/*    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-    align-items: start; /* Ensures the items align properly */
-}
-
-#all_work .project {
-    position: relative;
-    width: 100%; 
-/*    aspect-ratio: 3 / 2; */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#all_work .project-1 { background-image: url('img/homepage.png'); }
-#all_work .project-2 { background-image: url('img/gamification.png'); }
-#all_work .project-3 { background-image: url('img/webdesign.png'); }
-#all_work .project-4 { background-image: url('img/growth.png'); }
-#all_work .project-5 { background-image: url('img/navigation.png'); }
-#all_work .project-6 { background-image: url('img/design_system.png'); }
-#all_work .project-7 { background-image: url('img/dealer_tool.png'); }
-#all_work .project-8 { background-image: url('img/search.png'); }
-#all_work .project-9 { background-image: url('img/refferals.png'); }
-#all_work .project-10 { background-image: url('img/churn.png'); }
-#all_work .project-11 { background-image: url('img/consulting.png'); }
-
-#all_work .project-1, 
-#all_work .project-2,
-#all_work .project-3,
-#all_work .project-4,
-#all_work .project-5,
-#all_work .project-6,
-#all_work .project-7,
-#all_work .project-8,
-#all_work .project-9,
-#all_work .project-10,
-#all_work .project-11{
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
 }
 
 /*About me page*/
@@ -451,6 +326,7 @@ footer {
 #contact-details .icon-before-text{
   filter: invert(100%) hue-rotate(180deg);
 }
+
 
 /***** RESPONSIVE DESIGN *****/
 @media (max-width: 1024px) {
@@ -505,18 +381,10 @@ footer {
         margin-block-start: 20px;
     }
     
-    #all_work .projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px 20px;
-    }
     #all_work,
     #about,
     #contact-details{
         padding: 0 0 60px;
-    }
-
-    .project {
-        width: calc(50% - 20px);
     }
 }
 
@@ -539,17 +407,6 @@ footer {
     
     .container{
         padding: 0 20px;
-    }
-
-    .projects {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .project {
-        width: 100%;
-        max-width: 100%;
     }
     
     .services {
@@ -579,10 +436,6 @@ footer {
             display: block;
         }
 
-    #all_work .projects {
-        grid-template-columns: 1fr;
-    }
-
     .contact-illustration {
         max-width: 300px;
     }
@@ -590,13 +443,10 @@ footer {
 
 @media (max-width: 480px) {
     h1 { 
-        font-size: 32px;
         margin-block-start:20px;
         margin-block-end:20px; 
     }
-    h2 { font-size: 28px; }
-    h3 { font-size: 20px; }
-    p { font-size: 16px; }
+
     .btn { height: 45px; line-height: 45px; font-size: 16px; }
     
     nav img{
@@ -620,11 +470,6 @@ footer {
         padding: 0;
     }
 
-/*    .burger-menu {
-        display: block;
-        padding: 10px 0 10px 10px;
-    }*/
-
     .burger-menu {
                 display: flex;
             }
@@ -647,16 +492,6 @@ footer {
     }
     header{
         margin: 20px 0 0;
-    }
-
-    .projects{
-        gap: 25px;
-    }
-    #all_work {
-        padding: 20px 0 40px;
-    }
-    #all_work .projects {
-        gap: 30px;
     }
 }
 

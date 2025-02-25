@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaudia Rudna - Portfolio</title>
     <link rel="stylesheet" href="klaudia-style.css">
+    <link rel="stylesheet" href="klaudia-work-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <!-- Clarity -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -28,7 +31,7 @@
 </head>
 <body>
     <nav class="container">
-            <a href="index.html" class="logo"><img src="img\klaudia-logo.svg" alt="Klaudia Rudna Logo"></a>
+            <a href="http://klaudia.pro" class="logo"><img src="img\klaudia-logo.svg" alt="Klaudia Rudna Logo"></a>
          <div class="burger-menu" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
@@ -43,44 +46,75 @@
 
     <header>
         <div class="container">
-            <h3 style="color: var(--secondary-color);">klaudia rudna</h3>
+            <h3 class="name">klaudia rudna</h3>
             <h1>Research-Driven UX That Boosts <span>Engagement & Conversions</span></h1>
             <!-- <h2>Smart, user-focused design that turns clicks into customers and frustration into flow.</h2> -->
             <a href="contact.html" class=" btn glow-on-hover style="color: var(--primary-color);">Let's Talk</a>
         </div>   
     </header>   
 
-    <section id="work">
+    <section id="featured">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects">
-                <div class="project project-1">
+                
+            <!-- Project 11 -->
+            <a href="project/unidays-homepage.html" data-fancybox data-type="iframe" class="link-project">
+                <div class="project">
+                    <!-- Image Container with Label -->
                     <div class="project-image">
-                        <img src="img/img-unidays-logo.png" alt="Project Logo">
+                        <img loading="lazy" src="img/homepage.png" alt="Homepage Experience" loading="lazy">
+                        <div class="label">
+                            <img src="img/img-unidays-logo.png" alt="Project Logo">
+                        </div>
                     </div>
+                    
+                    <!-- Text Content -->
                     <div class="project-text">
-                        <p class="subheading">UX/UI Design &#9679; UX Research</p>
+                        <span class="subheading">UX/UI Design &#9679; UX Research</span>
                         <p>Optimised app homepage for better discoverability, increasing return and engagement rates.</p>
                     </div>
-                </div> 
-                <div class="project project-2">
+                </div>
+            </a>
+
+            <!-- Project 1 -->
+            <a href="project/motors-web-design.html" data-fancybox data-type="iframe" class="link-project">
+                <div class="project">
+                    <!-- Image Container with Label -->
                     <div class="project-image">
-                        <img src="img/img-ebay-logo.png" alt="Project Logo">
+                        <img loading="lazy" src="img/webdesign.jpg" alt="">
+                        <div class="label">
+                            <img class="square" src="img/img-ebay-logo.png" alt="Project Logo">
+                        </div>
                     </div>
+                    
+                    <!-- Text Content -->
                     <div class="project-text">
-                        <p class="subheading">UI Design &#9679; Development</p>
+                        <span class="subheading">UI Design &#9679; Development</span>
                         <p>Designed and developed 60+ car dealer websites using HTML & CSS.</p>
                     </div>
                 </div>
-                <div class="project project-3">
+            </a>
+
+            <!-- Project 6 -->
+            <a href="project/placeholder.html" data-fancybox data-type="iframe" class="link-project">
+                <div class="project">
+                    <!-- Image Container with Label -->
                     <div class="project-image">
-                        <img src="img/img-ycbm-logo.png" alt="Project Logo">
+                        <img loading="lazy" src="img/growth.png" alt="Homepage Experience">
+                        <div class="label">
+                            <img src="img/img-ycbm-logo.png" alt="Project Logo">
+                        </div>
                     </div>
+                    
+                    <!-- Text Content -->
                     <div class="project-text">
-                        <p class="subheading">UX Research &#9679; Strategy</p>
+                        <span class="subheading">UX Research &#9679; Strategy</span>
                         <p>Mapped the customer journey to drive subscriber growth and identified key metrics.</p>
                     </div>
                 </div>
+            </a>
+   
             </div>
             <a href="work.html" class="btn glow-on-hover">View Work</a>
         </div>
@@ -131,52 +165,8 @@
                     </ul>
                 </div>
             </div>
-            <!-- <h2>How We Can Work Together</h2>
-                <ul>
-                    <li><b>Short-Term Contracts & UX Consulting</b> – Get expert UX insights for a specific project.</li>
-                    <li><b> Long-Term UX Engagements</b> – Need ongoing UX support? I integrate seamlessly with product teams.</li>
-                    <li><b>UX Research & Audits</b> – Not sure what’s wrong? I’ll uncover usability issues and provide actionable fixes.</li>
-                </ul> -->
-                
-            <!-- <div class="container">
-            <h2>What do I do?</h2>
-            <div class="services">  
-                <div class="service">
-                    <h3>UX Design & Design Thinking</h3>
-                    <p>Crafting user-centric solutions through research-driven design thinking, ensuring seamless experiences across web and mobile.</p>
-                </div>
-                <div class="service">
-                    <h3>UI Design & Redesign</h3>
-                    <p>Enhancing digital interfaces with high-performing UI design, optimizing usability, aesthetics, and consistency.</p>
-                </div>
-                <div class="service">
-                    <h3>UX Research & Strategy</h3>
-                    <p>Leveraging qualitative and quantitative research to uncover insights, drive decision-making, and optimise product experiences.</p>
-                </div>
-                <div class="service">
-                    <h3>UX Consulting & Optimisation</h3>
-                    <p>Advising teams on UX best practices, conducting audits, and optimizing key interactions to improve engagement and conversions.</p>
-                </div>
-            </div> -->
         </div>
     </section>
-
-    <!-- <section id="aboutme">
-        <div class="container">
-            <h2>Hi, I’m Klaudia!</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I’m an experienced UX designer passionate about creating seamless, user-friendly experiences. With a background in UX, product design, and web development, I help businesses improve engagement, conversions, and retention through research-driven design. I’ve worked with brands like UNiDAYS, YouCanBook.me, and eBay Motors Group, solving complex UX challenges for millions of users.</p>
-                    <p>Need a UX expert to optimise your product?</p>
-                    <a href="contact.html" class="btn glow-on-hover">Let's talk</a>
-                </div>
-                <div class="testimonial">
-                    <p>“Klaudia is (...) consistently demonstrating a meticulous and analytical approach to design. She leverages both user research and her extensive experience to craft exceptional user journeys. From a developer's perspective, she is highly collaborative, receptive to feedback, and easy to work with, making her a key contributor to successful projects.”</p>
-                    <p class="small-text">Senior Mobile Engineer &#9679; UNiDAYS</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section id="aboutme">
         <div class="container">
@@ -215,5 +205,7 @@
             document.querySelector("nav ul").classList.toggle("active");
         }
     </script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
 </html>
