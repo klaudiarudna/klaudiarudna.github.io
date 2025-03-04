@@ -207,6 +207,10 @@
     #featured .projects{
         margin-bottom: 20px;
     }
+    /* Hover Effect */
+    .link-project:hover .project-image img {
+        transform: none;
+    }
 }
 
 

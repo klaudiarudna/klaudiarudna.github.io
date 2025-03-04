@@ -471,22 +471,23 @@ footer {
     }
 
     .burger-menu {
-                display: flex;
-            }
-            ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 50px;
-                right: 10px;
-                background: white;
-                padding: 10px;
-/*                border: 1px solid #ddd;*/
-            }
-            ul.active {
-                display: flex;
-            }
-
+        display: flex;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background: white;
+        padding: 10px;
+    }
+   
+    ul.active {
+        display: flex;
+    }
+    
     .burger-menu.active + ul {
         display: flex;
     }
