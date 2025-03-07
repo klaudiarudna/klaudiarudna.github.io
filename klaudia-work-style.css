@@ -3,7 +3,7 @@
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 20px;
     max-width: 1400px;
     margin: 0 auto;
     width: 100%;
@@ -44,18 +44,6 @@
     background-color: var(--primary-color);
     margin: 0;
     border-radius: 4px;
-}
-
-#featured .label{
-    padding: 0;
-    background-color: transparent;
-}
-#featured .label img{
-    height: 50px;
-    border-radius: 4px;
-}
-#featured .label .square{
-    height: 80px;
 }
 
 #featured .projects{
